@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Reg form</title>
+</head>
+<body>
+<dialog class="modal" aria-labelledby="register-header">
+  <div class="modal__content">
+    
+    <div class="modal__header">
+      <h1 class="modal__title" id="register-header">Регистрация</h1>
+      <button class="modal__close-button" aria-label="Закрыть форму">
+        <img src="/assets/images/close-button.svg" alt="Закрыть форму">
+      </button>
+    </div>
+    
+    <form id="reg-form">
+      <label class="modal__label margin-b">
+        <span class="modal__label_text">E-mail</span>
+        <input type="email" class="modal__input" name="email" required>
+      </label>
+      
+      <label class="modal__label margin-b">
+        <span class="modal__label_text">Никнейм</span>
+        <input type="text" class="modal__input" name="nickname" required>
+      </label>
+      
+      <label class="modal__label">
+        <span class="modal__label_text">Пароль</span>
+        <input type="password" class="modal__input" name="password" required>
+      </label>
+      
+      <div class="modal__valid-messages small-font font-grey">
+        <h3>Пароль должен содержать:</h3>
+        <div class="modal__valid-messages_item">
+          <div class="modal__circle modal__circle--default" id="validPasswordLengthImg"></div>
+          <span>от 6 до 32 символов</span>
+        </div>
+        <div class="modal__valid-messages_item">
+          <div class="modal__circle modal__circle--default" id="validPasswordInNumberContain"></div>
+   <!--   <div class="modal__circle modal__circle--error font-red"></div>  -->
+          <span>цифру</span>
+        </div>
+        <div class="modal__valid-messages_item">
+          <div class="modal__circle modal__circle--default" id="validPasswordInWordCase"></div>
+   <!--  <div class="modal__circle modal__circle--ok font-green"></div>  -->
+          <span>заглавную и строчную буквы</span>
+        </div>
+        <div class="modal__valid-messages_item" id="validPasswordMatchesNick">
+          <span>Пароль не должен совпадать с Никнеймом или email</span>
+        </div>
+      </div>
+      
+      <label class="modal__label margin-t">
+        <span class="modal__label_text">Пароль еще раз</span>
+        <input type="password" class="modal__input" name="passwordAgain" required>
+      </label>
+      
+      <div class="small-font margin-t-small font-grey" id="validPasswordAgainMessage">Введенные пароли не совпадают</div>
+      
+      <label class="modal__contract small-font margin-t-medium">
+        <input type="checkbox" name="contract" class="modal__input-checkbox" required>
+        <span>
+          Я принимаю условия <a href="https://google.com" class="modal__link">Пользовательского соглашения</a>
+        </span>
+      </label>
+      
+      <button type="submit"
+              class="button modal__button-submit"
+              aria-label="Отправить форму"
+              disabled
+      >
+        Зарегистрироваться
+      </button>
+    </form>
+  
+  </div>
+</dialog>
+
+<div class="wrapper-button">
+  <button class="button button-open-modal">Регистрация</button>
+</div>
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>
