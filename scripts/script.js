@@ -49,6 +49,9 @@ const handleSubmitButton = (e) => {
     passwordAgain: serializeForm(form).passwordAgain.value,
     contract: serializeForm(form).contract.value,
   }))
+  const buttonOpenModalNode = document.querySelector('.button-open-modal')
+  buttonOpenModalNode.disabled = true
+  modal.close()
 }
 
 buttonOpenModal.addEventListener('click', handleButtonOpenModalClick)
