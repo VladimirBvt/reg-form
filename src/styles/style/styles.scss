@@ -1,20 +1,3 @@
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"),
-  url("/src/assetssets/fonts/Roboto-Regular.woff2") format("woff2"),
-  url("/src/assetssets/fonts/Roboto-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto"),
-  url("/src/assetssets/fonts/Roboto-Bold.woff2") format("woff2"),
-  url("/src/assetssets/fonts/Roboto-Bold.woff") format("woff");
-}
 
 /* reset styles */
 * {
@@ -110,15 +93,18 @@ body {
 
 .modal__content {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 481px;
+  height: 700px;
   border: none;
-  padding: 40px;
+  padding: 19px 40px 19px 40px;
   background: #ffffff;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 10%));
 }
@@ -254,13 +240,15 @@ input:focus-visible {
 }
 
 .modal__circle--default {
-  background: center / contain no-repeat url("/src/assetssets/images/default-icon.svg");
+  background: center / contain no-repeat url("assets/images/default-icon.svg");
 }
 
 .modal__circle--error {
-  background: center / contain no-repeat url("/src/assetssets/images/error-icon.svg");
+  background: center / contain no-repeat url("assets/images/error-icon.svg");
 }
 
 .modal__circle--ok {
-  background: center / contain no-repeat url("/src/assetssets/images/ok-icon.svg");
+  background: center / contain no-repeat url("assets/images/ok-icon.svg");
 }
+
+

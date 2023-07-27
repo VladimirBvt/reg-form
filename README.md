@@ -101,7 +101,7 @@
 
 
 ### Реализация:
-- Реализовано с использованием JavaScript, TypeScript, SASS(SCSS), Webpack, ESLint, Prettier, Babel.
+- Реализовано с использованием JavaScript, SASS(SCSS), Webpack, ESLint, Prettier, Babel.
 
 ## Установка
 
