@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reg form</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div class="modal__header">
       <h1 class="modal__title" id="register-header">Регистрация</h1>
       <button class="modal__close-button" aria-label="Закрыть форму">
-        <img src="/assets/images/close-button.svg" alt="Закрыть форму">
+        <img src="assets/images/close-button.svg" alt="Закрыть форму">
       </button>
     </div>
     
@@ -29,7 +29,7 @@
       
       <label class="modal__label">
         <span class="modal__label_text">Пароль</span>
-        <input type="password" class="modal__input" name="password" required>
+        <input type="password" class="modal__input" name="password" autocomplete="new-password" required>
       </label>
       
       <div class="modal__valid-messages small-font font-grey">
@@ -40,12 +40,10 @@
         </div>
         <div class="modal__valid-messages_item">
           <div class="modal__circle modal__circle--default" id="validPasswordInNumberContain"></div>
-   <!--   <div class="modal__circle modal__circle--error font-red"></div>  -->
           <span>цифру</span>
         </div>
         <div class="modal__valid-messages_item">
           <div class="modal__circle modal__circle--default" id="validPasswordInWordCase"></div>
-   <!--  <div class="modal__circle modal__circle--ok font-green"></div>  -->
           <span>заглавную и строчную буквы</span>
         </div>
         <div class="modal__valid-messages_item" id="validPasswordMatchesNick">
@@ -83,6 +81,5 @@
   <button class="button button-open-modal">Регистрация</button>
 </div>
 
-<script src="./scripts/script.js"></script>
 </body>
 </html>
