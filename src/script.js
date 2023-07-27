@@ -1,13 +1,3 @@
-const dialogPolyfillURL = "https://esm.run/dialog-polyfill";
-const isBrowserNotSupportDialog = window.HTMLDialogElement === undefined;
-if (isBrowserNotSupportDialog) {
-  const dialogs = document.querySelectorAll("dialog");
-
-  dialogs.forEach(async (dialog) => {
-    const {default: polyfill} = await import(dialogPolyfillURL);
-    polyfill.registerDialog(dialog);
-  });
-}
 
 const buttonOpenModal = document.querySelector('.button-open-modal')
 const modal = document.querySelector('.modal')

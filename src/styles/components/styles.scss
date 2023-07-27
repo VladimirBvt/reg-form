@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Roboto"),
-  url("/fonts/Roboto-Regular.woff2") format("woff2"),
-  url("/fonts/Roboto-Regular.woff") format("woff");
+  url("/src/assetssets/fonts/Roboto-Regular.woff2") format("woff2"),
+  url("/src/assetssets/fonts/Roboto-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 700;
   src: local("Roboto"),
-  url("/fonts/Roboto-Bold.woff2") format("woff2"),
-  url("/fonts/Roboto-Bold.woff") format("woff");
+  url("/src/assetssets/fonts/Roboto-Bold.woff2") format("woff2"),
+  url("/src/assetssets/fonts/Roboto-Bold.woff") format("woff");
 }
 
 /* reset styles */
@@ -254,13 +254,13 @@ input:focus-visible {
 }
 
 .modal__circle--default {
-  background: center / contain no-repeat url("/assets/images/default-icon.svg");
+  background: center / contain no-repeat url("/src/assetssets/images/default-icon.svg");
 }
 
 .modal__circle--error {
-  background: center / contain no-repeat url("/assets/images/error-icon.svg");
+  background: center / contain no-repeat url("/src/assetssets/images/error-icon.svg");
 }
 
 .modal__circle--ok {
-  background: center / contain no-repeat url("/assets/images/ok-icon.svg");
+  background: center / contain no-repeat url("/src/assetssets/images/ok-icon.svg");
 }
